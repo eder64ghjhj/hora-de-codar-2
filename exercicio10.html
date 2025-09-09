@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let altura = Number(prompt("Digite sua altura em metros:"));
+let genero = Number(prompt("Digite seu gênero (1 - feminino, 2 - masculino):"));
+let pesoIdeal;
+
+if (genero === 1) {
+  pesoIdeal = (62.1 * altura) - 44.7;
+} else if (genero === 2) {
+  pesoIdeal = (72.7 * altura) - 58;
+} else {
+  console.log("Gênero inválido.");
+}
+
+if (pesoIdeal) {
+  console.log("Seu peso ideal é:", pesoIdeal.toFixed(2), "kg");
+}
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
